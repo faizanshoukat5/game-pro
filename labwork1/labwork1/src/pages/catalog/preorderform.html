@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Pre-Order Form</title>
+</head>
+
+<body>
+
+    <ul>
+        <a href="../assests/images/image.html">
+            <li>HTML Image Tag</li>
+        </a>
+        <a href="../../../index.html">
+            <li>Home</li>
+        </a>
+        <a href="../about/about.html">
+            <li>About Us</li>
+        </a>
+        <a href="../contact/contact.html">
+            <li>Contact Us</li>
+        </a>
+        <a href="../catalog/catalog.html">
+            <li>Catalog</li>
+        </a>
+        <a href="../catalog/preorderform.html">
+            <li>Preorder Form</li>
+        </a>
+        <a href="../catalog/GameDescription.html">
+            <li>Game Description</li>
+        </a>
+    </ul>
+
+    <h2>Game Pre-Order Form</h2>
+
+    <form action="submit_order.php" method="post">
+
+        <label for="game">Select Game:</label>
+        <select id="game" name="game">
+            <option value="gta5">Grand Theft Auto V</option>
+            <option value="eldenring">Elden Ring</option>
+            <option value="fifa24">FIFA 24</option>
+            <option value="codmw3">Call of Duty: Modern Warfare 3</option>
+        </select>
+        <br><br>
+
+        <label for="platform">Select Platform:</label>
+        <select id="platform" name="platform">
+            <option value="pc">PC</option>
+            <option value="ps5">PlayStation 5</option>
+            <option value="xbox">Xbox Series X</option>
+        </select>
+        <br><br>
+
+        <label>Delivery Method:</label><br>
+        <input type="radio" id="digital" name="delivery" value="digital">
+        <label for="digital">Digital Download</label><br>
+
+        <input type="radio" id="physical" name="delivery" value="physical">
+        <label for="physical">Physical Copy</label><br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" cols="40" required></textarea>
+        <br><br>
+
+        <label for="message">Additional Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Any special instructions?"></textarea>
+        <br><br>
+
+        <input type="submit" value="Pre-Order Now">
+
+    </form>
+
+</body>
+
+</html>
+
